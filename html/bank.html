@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Payment page</h1> 
+<form action="submit_payment.php"method="post">
+Name<input name="Name :" type="text"/><br/> <br/>
+<label for="Method of payment">Choose Method of Payment :</label>
+<select name ="Method of payment">
+<option value="Choose"></option>
+<option value="Credit card ">Credit card</option>
+<option value="Bank transfer">Bank transfer</option>
+<option value="Paytm">Paytm</option>
+<option value="Google Pay">Google Pay</option>
+<option value="Phone Pe">Phone Pe</option>
+<option value="Debit Card">Debit Card</option>
+<option value="UPI">UPI</option>
+</select><br/><br/>
+<label for="Phone Number">Enter Phone Number :</label>
+<input Name="PhoneNo." type="text" placeholder="e.g. 9027954885" maxlength="10" required/><br/> <br/>
+<div style="cursor:pointer; color:blue;text-decoration:underline;"
+onclick="OTP">Send OTP</div><br/> 
+OTP: <input name="Enter OTP" type="text"/> <br/> <br/>
+<button type="SUBMIT">SUBMIT</button>
+ </form>
+</body>
+</html>
