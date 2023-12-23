@@ -7,19 +7,19 @@ if A==1:
     c=a+b
     print(c)
 
-if A==2:
+elif A==2:
     a=float(input("Enter value :"))
     b=float(input("Enter value :"))
     c=a-b
     print(c)
 
-if A==3:
+elif A==3:
     a=float(input("Enter value :"))
     b=float(input("Enter value :"))
     c=a/b
     print(c)
 
-if A==4:
+elif A==4:
     a=float(input("Enter value :"))
     b=float(input("Enter value :"))
     c=a*b
