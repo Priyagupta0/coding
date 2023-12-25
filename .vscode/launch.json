@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/acer/OneDrive/Desktop/coding/c",
-      "program": "c:/Users/acer/OneDrive/Desktop/coding/c/build/Debug/outDebug",
+      "cwd": "c:/Users/acer/OneDrive/Desktop/coding/java",
+      "program": "c:/Users/acer/OneDrive/Desktop/coding/java/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
