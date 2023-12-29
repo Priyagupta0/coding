@@ -1,11 +1,11 @@
 #include<stdio.h>
-
+//swaping function
 void swap(int *xp, int *yp){
     int temp=*xp;
     *xp=*yp;
     *yp=temp;
 }
-    
+    //function of bubblesort
 void bubblesort(int arr[],int n){
     int i,j;
     for(int i=0;i<n-1;i++){
@@ -25,8 +25,9 @@ int main(){
     for(int i=0;i<n;i++){
     scanf("%d",&arr[i]);
     }
+    //function call;
     bubblesort(arr,n);
-
+    //print sorted array;
     printf("Sorted array:\n");
     for(int i=0;i<n;i++){
         printf("%d",arr[i]);
