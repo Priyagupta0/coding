@@ -1,74 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      overflow-x: hidden;
+    }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
+    header {
+      height: 40vh;
+      display: flex;
+      align-items: center ;
+      justify-content: flex-start;
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      text-align: left;
+      padding-right: 20px;
+      overflow:hidden;
+    }
 
-        .about, .projects, .contact {
-            margin: 20px;
-        }
+    header h1 {
+      white-space: nowrap;
+      overflow: hidden;
+      animation: scrollText 10s linear infinite;
+    }
 
-        .project {
+    @keyframes scrollText {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    hr{
+        border-color: black;
+    
+    }
+    .project {
+        background-color: gray;
             border: 1px solid #ccc;
             padding: 10px;
             margin-bottom: 10px;
         }
-    </style>
+  </style>
 </head>
 <body>
-    <header>
-        <h1>PRIYA GUPTA</h1>
-        <p>Cloud Developer</p>
-    </header>
+  <header>
+    <h1>Welcome to in my Portfolio</h1>
+  </header>
 
-    <section class="about">
-        <h2>About Me</h2>
-        <p> Hi,
-             My name is Priya Gupta I am computer science engineering undergraduate from Dr.A.P.J. Abdul Kalam Technical University and Technical enthusiast.<br> I have completed my frontend web development course and I have a deep interest in cloud computing and I have made some projects like login page, portfolio and so on using HTML, CSS, JavaScript. Additionally I have a good knowledge of python and recently I have worked as a frontend developer in Bharat Intern.
-             
-            <br> I wish to use my technical acumen to contribute to a team that works for development and creates a positive impact on a society.</p>
-    </section>
+  <nav>
+    <a href="#home">Home</a><br><br>
+    <a href="#contact">Skills</a><br><br>
+    <a href="#skills">Projects</a><br><br>
+    <a href="#projects">Contact Info</a>
+  </nav>
+     
 
+    <img src="c:\Users\acer\OneDrive\Documents\image.jpg"alt="image" width="100" height="100">
+
+    
+   <div id="home" style="background-color: lightgreen;border-radius: 25px;">
+  <section id="home">
+    <h2>Home</h2><br>
+    <b>About me</b>
+    <br>
+    <br>
+    Hey, Welcome to you in my profile! 
+<br><br>
+I am Priya Gupta,I am a Computer Science and Engineering undergraduate from Dr. A.P.J.Abdul Kalam Technical University and a technical enthusiast.
+<br>
+I have a deep interest in cloud computing and a great knowledge of web development.I have completed basics of  HTML | CSS | C programming language and have a knowledge of Git and GitHub, Now I am working on python. 
+<br>
+Currently I am working as frontend web developer at Bharat Intern and explore my knowledge.
+<br>
+l wish to use my technical acumen to contribute to a team that works for development and creates a positive impact on the society.
+<br><br>
+Thanks for visiting my profile and I'll be glad to connect with you!
+
+   <div id="resume">
+
+    <h3>Resume</h3>
+    <a href="C:\Users\acer\OneDrive\Documents\Resume.docx"
+    target="blank">Here</a>
+   </div>
+
+     </section>
+    </div>
+
+    <br>
+    <br>
+
+   <div id="skills" style="background-color: gray;border-radius: 25px; ">
+  <section id="skills">
+    <h2><u>Skills</u></h2><br>
+    <p><b> 1. Programming Language</b><ul><li>C</li></ul><ul><li>Python</li></ul>
+    <b>2. Web Development</b><ul><li>HTML</li></ul><ul><li>CSS</li></ul><ul><li>JavaScript</li></ul>
+    <b>3. Communication Skills</b><br><br>
+    <b>4. Team Work</b><br><br>
+    <b>5. Presentation Skills</b><br><br>
+  </section>
+</div>
+
+<br>
+    <br>
+
+<div id="project section" style="background-color:lightgreen;border-radius: 25px;">
     <section class="projects">
         <h2>Projects</h2>
         <div class="project">
             <h3><u>Project 1</u>: Facebook Login Page </h3>
-            <p>......</p>
+        <p>Create a replica of the Facebook login page as part of your portfolio. This project involves implementing the visual and functional aspects of the Facebook login screen. Emphasize responsiveness for various screen sizes and ensure that the form captures user input securely.
+          
+          *Key Features:*
+          1. *HTML/CSS:* Use HTML for the structure and CSS for styling to closely mimic the Facebook login page layout.
+          2. *Form Design:* Implement the login form with fields for email/phone and password, matching Facebook's design.
+          3. *Responsiveness:* Ensure the page is responsive, adapting to different devices and screen sizes.
+          4. *JavaScript (Optional):* Enhance the user experience by adding client-side validation or interactive elements using JavaScript.
+          5. *Security Considerations:* Although this is a frontend project, emphasize the importance of secure coding practices. Ensure that the form handling is done securely.
+          
+          *Technologies Used:*
+          - HTML
+          - CSS
+          - JavaScript (optional)
+          - Responsive Design Principles
+          
+          *Learning Objectives:*
+          - Gain proficiency in recreating complex UI designs.
+          - Understand the importance of responsive web design.
+          - Learn how to create a visually appealing and user-friendly login form.
+          - Optional: Practice basic JavaScript for client-side interactions.
+          
+          This project showcases your ability to replicate well-known interfaces, pays attention to design details, and ensures a seamless user experience. Additionally, it highlights your understanding of frontend development and responsiveness.
+            </p>
         </div>
         <div class="project">
             <h3><u>Project 2</u>: Homepage of Netflix</h3>
-            <p>Description of Project 2.</p>
+            <p>
+              
+            </p>
         </div>
         <div class="project">
             <h3><u>Project 3</u>: Weather Website</h3>
-            <p>Description of Project 3.</p>
+            <p></p>
         </div>
         <div class="project">
             <h3><u>Project 4</u>: Payment Website</h3>
-            <p>Description of Project 4.</p>
+            <p> </p>
         </div>
     </section>
+</div>
+<br>
+<br>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: pg7108970@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/priya-gupta</p>
-        <p>GitHub: github.com/priya-gupta</p>
-    </section>
+<div id="contact" style="text-align: center;background-color: grey;border-radius: 25px;">
+  <section id="contact">
+    <h2>Contact </h2><br>
+    <p>+91 8791641606</p>
+    <hr>
+    <p>pg7108970@gmail.com</p>
+    
+  </section>
+</div>
+
+
 </body>
 </html>
