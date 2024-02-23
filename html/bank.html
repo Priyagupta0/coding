@@ -5,12 +5,43 @@
     <meta name="viewport" content="width=initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .form{
+    text-align: center;
+    }
+    body{
+        background-color: yellow;
+        background-image: radial-gradient(circle at 20% 50%, blue,aqua,transparent);
+    }
+    .box{
+        align-items: center;
+        background-color: rgb(192, 173, 176);
+        margin: auto;
+        width: 95vh;
+        height: 75vh;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    input[type="text"],input[type="SUBMIT"],select{
+        width: 50%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px; 
+    }
+    input[type="SUBMIT"]{
+        background-color: blue;
+        color: white;
+    }
+</style>
 <body>
-<h1>Payment page</h1> 
+    <div class="box">
+    <div class="form">
+<h1 style="color:black; text-align: center;"><u>Payment page</u></h1> 
 <form action="submit_payment.php"method="post">
-Name<input name="Name :" type="text"/><br/> <br/>
-<label for="Method of payment">Choose Method of Payment :</label>
-<select name ="Method of payment">
+Full Name : <input type="text" ><br> <br>
+ Phone No. :   <input name="PhoneNo." type="text" placeholder="e.g. 9027954885" maxlength="10" required/><br> <br>
+<label for="method of payment">Choose :</label>
+<select>
 <option value="Choose"></option>
 <option value="Credit card ">Credit card</option>
 <option value="Bank transfer">Bank transfer</option>
@@ -19,13 +50,13 @@ Name<input name="Name :" type="text"/><br/> <br/>
 <option value="Phone Pe">Phone Pe</option>
 <option value="Debit Card">Debit Card</option>
 <option value="UPI">UPI</option>
-</select><br/><br/>
-<label for="Phone Number">Enter Phone Number :</label>
-<input Name="PhoneNo." type="text" placeholder="e.g. 9027954885" maxlength="10" required/><br/> <br/>
+</select><br><br>
+ Enter OTP : <input name="Enter OTP" type="text" maxlength="5" required/> <br> <br>
 <div style="cursor:pointer; color:blue;text-decoration:underline;"
 onclick="OTP">Send OTP</div><br/> 
-OTP: <input name="Enter OTP" type="text" maxlength="5"/> <br/> <br/>
-<button type="SUBMIT">SUBMIT</button>
+<input type="SUBMIT" value="SUBMIT">
  </form>
+    </div>
+    </div>
 </body>
 </html>

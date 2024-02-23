@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+</head>
+<style>
+  body{
+    background-color:rgb(146, 190, 78);
+    background-image: radial-gradient(circle at 20% 50%,rgb(255, 199, 94),yellow,transparent);
+
+  }
+  .box{
+    width: 95vh;
+    background-color: pink;
+    height: 75vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+  
+  }
+    .container{
+      text-align: center;
+    }
+    input[type="email"], input[type="text"], input[type="submit"] {
+      width: 50%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px; 
+    }
+    input[type="submit"] {
+      background-color: blue;
+      color: white;
+    }
+    .line{
+        border-bottom: 2px solid black;
+        width: 500px;
+        margin: auto;
+    }
+</style>
+<body>
+  <div class="box">
+    <div class="container">
+    <h1 style="color:blue; text-align:center">facebook</h1>
+    <form>
+        <input type="email" placeholder="Email Address">
+        <br><br>
+        <input type="text" placeholder="Password">
+        <br><br>
+        <input type="submit" value="Log In">
+    </form>
+        <br>
+        <h4 style="color: blue;"><a href="#">Forgotten Password? </a></h4>
+        <div class="line"></div>
+        <br>
+        <h4 style="color: blue; text-align: center;"><a href="#">Create an Account</a></h4>
+    </div>
+  </div>
+</body>
+</html>
