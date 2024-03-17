@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "practice",
+      "request": "launch",
+      "mainClass": "practice",
+      "projectName": "coding_146be127"
+    },
+    {
+      "type": "java",
       "name": "App",
       "request": "launch",
       "mainClass": "App",
