@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "calculator",
+      "request": "launch",
+      "mainClass": "calculator",
+      "projectName": "coding_146be127"
+    },
+    {
+      "type": "java",
       "name": "practice",
       "request": "launch",
       "mainClass": "practice",
