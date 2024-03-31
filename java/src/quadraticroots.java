@@ -4,6 +4,7 @@ import java.lang.Math;
 public class quadraticroots {
     public static void main (String[] args){
 //finding roots of the given equation coefficient
+@SuppressWarnings("resource")
 Scanner scanner = new Scanner(System.in);
 System.out.println("enter first coefficient:");
 double num1 = scanner.nextDouble();
