@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "practice",
+      "request": "launch",
+      "mainClass": "java.practice",
+      "projectName": "coding_146be127"
+    },
+    {
+      "type": "java",
       "name": "nested",
       "request": "launch",
       "mainClass": "nested",
