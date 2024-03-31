@@ -1,16 +1,16 @@
-// import java.util.Scanner;
+import java.util.*;
 
 public class nested {
     public static void main(String[] args) {
-        // System.out.println("Enter input:");
-        // double num = Scanner.nextDouble();
-        int n=5;
+        @SuppressWarnings("resource")
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter input:");
+        double n = scanner.nextDouble();
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j <=i; j++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print(" * ");
             }
-            System.out.println( );
+            System.out.println();
         }
     }
-
 }
