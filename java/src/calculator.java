@@ -4,6 +4,9 @@ public class calculator {
     public static void main(String[] args) {
         @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
+        int i=0;
+        while(i<10)
+        {
         System.out.println("Welcome in our calculator!!..");
         System.out.println("Select operator(+,-,*,/)");
         char operator = scanner.next().charAt(0);
@@ -46,5 +49,6 @@ public class calculator {
                 return;
         }
     }
+}
 
 }
