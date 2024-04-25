@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class nested {
+public class nestedtriangle {
     public static void main(String[] args) {
         @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);

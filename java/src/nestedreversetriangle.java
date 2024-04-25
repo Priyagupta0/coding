@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class nestedreverse {
+public class nestedreversetriangle {
     public static void main(String[] args) {
         @SuppressWarnings("resource")
         Scanner S = new Scanner(System.in);
