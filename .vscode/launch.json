@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "nestedmiddletriangle",
+      "request": "launch",
+      "mainClass": "nestedmiddletriangle",
+      "projectName": "coding_146be127"
+    },
+    {
+      "type": "java",
       "name": "nestednumber",
       "request": "launch",
       "mainClass": "nestednumber",
