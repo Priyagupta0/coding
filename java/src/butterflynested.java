@@ -1,4 +1,4 @@
-public class advancedpyramid {
+public class butterflynested {
     public static void main(String args[]){
         for(int i=0;i<4;i++){
             for(int j=0;j<=i;j++){
@@ -19,7 +19,7 @@ public class advancedpyramid {
             for(int j=0;j<8-2*i;j++){
                 System.out.print(" ");
             }
-            for(int j=0;j<2i;j++){
+            for(int j=0;j<i;j++){
                 System.out.print("*");
             } 
             System.out.println();
