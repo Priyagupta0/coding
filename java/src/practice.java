@@ -1,4 +1,3 @@
-import java.util.*;
 class A{
     public void setValue(int x){
         int value = x;
