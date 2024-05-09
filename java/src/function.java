@@ -8,11 +8,11 @@ public class function {
     }
 
     public static void main(String args[]) {
-        Scanner s = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter number:");
-        int a = s.nextInt();
+        int a = sc.nextInt();
         System.out.print("Enter number:");
-        int b = s.nextInt();
+        int b = sc.nextInt();
         double result = CalPower(a, b);
         System.out.print("Result is: " + result);
     }
