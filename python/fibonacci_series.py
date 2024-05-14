@@ -7,7 +7,7 @@ elif(n==1):
     print("Fibonacci series:",x1)
 elif(n==2):
     print("Fibonacci series:",x1,x2)
-elif(n>2):
+else:
     print("Fibonacci series:",x1,x2,end=' ')
     for n in range(n):
       x=x1+x2
