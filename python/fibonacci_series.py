@@ -1,4 +1,4 @@
-n=int(input("Enter number for series (n>2):"))
+n=int(input("Enter number for series (n>2):"))               #Fibonacci series
 x1=0
 x2=1
 if(n<0):
@@ -14,3 +14,17 @@ else:
       x1=x2
       x2=x
       print( x,end=" ")
+
+print()
+
+def is_fibonacci(n):                      # Check number is fibonacci number or not
+    a, b = 0, 1
+    while b < n:
+        a, b = b, a + b
+    return b == n
+
+number = int(input("Enter number: "))
+if is_fibonacci(number):
+    print(number, "is a Fibonacci number.")
+else:
+    print(number, "is not a Fibonacci number.")
