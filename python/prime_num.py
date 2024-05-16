@@ -21,7 +21,7 @@ else:
       if(n%i==0):
        flag=1
        break
-if(flag==0):
-    print(n," is a Prime number")
+if flag:
+    print(f"{n} is not a Prime number")
 else:
-    print(n,"is not a Prime number")
+    print(f"{n} is a Prime number")
