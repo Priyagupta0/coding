@@ -5,11 +5,6 @@ obj.draw()
 # obj=lib.apj()
 # obj.draw()
 # from sketchpy import canvas as lib
-# obj=lib.sketch_from_image("python/msdhoni.webp")
-# obj.draw()
-# from sketchpy import canvas as lib
 # obj=lib.sketch_from_image("python/anshika.jpg")
 # obj.draw()
-# from sketchpy import canvas as lib
-# obj=lib.sketch_from_image("python/my image.jpg")
-# obj.draw()
+

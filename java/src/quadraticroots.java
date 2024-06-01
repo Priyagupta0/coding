@@ -13,8 +13,8 @@ double num2 = scanner.nextDouble();
 System.out.println("enter third coefficient:");
 double num3 = scanner.nextDouble();
 System.out.println("The roots are - \n");
-double root1 = ((-(num2) + Math.sqrt((Math.pow(num2,2)) - (4*num1*num3)))/(2*(num1)));
-double root2 = ((-(num2) - Math.sqrt((Math.pow(num2,2)) - (4*num1*num3)))/(2*(num1)));
+double root1 = ((-(num2) + Math.sqrt(((num2)*(num2)) - (4*num1*num3)))/(2*(num1)));
+double root2 = ((-(num2) - Math.sqrt(((num2)*(num2)) - (4*num1*num3)))/(2*(num1)));
 System.out.println(root1);
 System.out.println(root2);
 }
